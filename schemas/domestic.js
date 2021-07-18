@@ -17,14 +17,6 @@ export default {
       type: 'blockContent',
     },
     {
-      name: 'logo',
-      title: 'Logo',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
-    },
-    {
       name: 'image',
       title: 'Image',
       type: 'image',
@@ -35,17 +27,17 @@ export default {
     {
       name: "alcohol",
       title: "Alcohol Content (by volume)",
-      type: "number",
+      type: "string",
     },
     {
       name: "size",
       title: "size",
-      type: "number",
+      type: "string",
     },
     {
       name: "price",
       title: "Price",
-      type: "number",
+      type: "string",
     },
     {
       name: "order",
@@ -54,9 +46,6 @@ export default {
       hidden: true,
     },
   ],
-      initialValue: {
-        imported: false,
-      },
     orderings: [
     {
       title: 'Order',
@@ -70,7 +59,7 @@ export default {
   preview: {
     select: {
       title: 'title',
-      media: 'logo',
+      media: 'image',
     },
   },
 }

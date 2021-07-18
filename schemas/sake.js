@@ -1,0 +1,55 @@
+import { GiDrinkMe as Icon } from "react-icons/gi";
+
+export default {
+  name: 'sake',
+  title: 'Sake',
+  type: 'document',
+  icon: Icon,
+  fields: [
+    {
+      name: 'title',
+      title: 'Title',
+      type: 'string',
+    },
+    {
+      name: 'image',
+      title: 'Image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    },
+    {
+      name: "size",
+      title: "size",
+      type: "string",
+    },
+    {
+      name: "price",
+      title: "Price",
+      type: "string",
+    },
+    {
+      name: "order",
+      title: "Order",
+      type: "number",
+      hidden: true,
+    },
+  ],
+    orderings: [
+    {
+      title: 'Order',
+      name: 'order',
+      by: [
+        {field: 'order', direction: 'asc'}
+      ]
+    }
+  ],
+
+  preview: {
+    select: {
+      title: 'title',
+      media: 'image',
+    },
+  },
+}

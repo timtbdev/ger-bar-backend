@@ -2,7 +2,7 @@ import { RiAncientGateLine as Icon } from "react-icons/ri";
 
 export default {
   name: 'japanese',
-  title: 'Japanese Beers',
+  title: 'Imported Beers',
   type: 'document',
   icon: Icon,
   fields: [
@@ -15,19 +15,6 @@ export default {
       name: 'description',
       title: 'Description',
       type: 'blockContent',
-    },
-    {
-      title: 'Imported from Japan',
-      name: 'imported',
-      type: 'boolean'  
-    },
-    {
-      name: 'logo',
-      title: 'Logo',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
     },
     {
       name: 'image',
@@ -59,9 +46,6 @@ export default {
       hidden: true,
     },
   ],
-      initialValue: {
-        imported: false,
-      },
     orderings: [
     {
       title: 'Order',
@@ -75,7 +59,7 @@ export default {
   preview: {
     select: {
       title: 'title',
-      media: 'logo',
+      media: 'image',
     },
   },
 }
